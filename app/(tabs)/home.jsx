@@ -27,8 +27,6 @@ const Home = () => {
     setrefreshing(false);
   };
 
-  console.log(user.username)
-
   return (
     <SafeAreaView className="bg-primary h-full">
       <FlatList
@@ -51,7 +49,7 @@ const Home = () => {
                   Welcome Back
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  {user.username}
+                  {user?.username}
                 </Text>
               </View>
 
